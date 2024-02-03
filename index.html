@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="main">
+    <div class="box">
+    <h1>casio</h1>
+        <div class="inner-box">
+            <input type="text"  id="input" placeholder="0"/>
+        </div>
+        <div class="buttons">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="deleteDisplay()">DE</button>
+            <button onclick="updateDisplay('.')">.</button>
+            <button onclick="updateDisplay('/')">/</button>
+            <button onclick="updateDisplay('7')">7</button>
+            <button onclick="updateDisplay('8')">8</button>
+            <button onclick="updateDisplay('9')">9</button>
+            <button onclick="updateDisplay('*')">*</button>
+            <button onclick="updateDisplay('4')">4</button>
+            <button onclick="updateDisplay('5')">5</button>
+            <button onclick="updateDisplay('6')">6</button>
+            <button onclick="updateDisplay('-')">-</button>
+            <button onclick="updateDisplay('1')">1</button>
+            <button onclick="updateDisplay('2')">2</button>
+            <button onclick="updateDisplay('3')">3</button>
+            <button onclick="updateDisplay('+')">+</button>
+            <button onclick="updateDisplay('00')">00</button>
+            <button onclick="updateDisplay('0')">0</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+    </div>
+</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
